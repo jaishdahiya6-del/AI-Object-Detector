@@ -1,0 +1,26 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="ai-object-detector",
+    version="1.0.0",
+    description="Real-time AI Object Detection System using YOLOv8 and OpenCV",
+    author="Your Name",
+    packages=find_packages(),
+    install_requires=[
+        "ultralytics>=8.2.0",
+        "opencv-python>=4.9.0",
+        "numpy>=1.26.0",
+        "matplotlib>=3.8.0",
+        "pandas>=2.2.0",
+        "pillow>=10.2.0",
+        "torch>=2.2.0",
+        "torchvision>=0.17.0",
+        "streamlit>=1.32.0",
+    ],
+    python_requires=">=3.10",
+    entry_points={
+        "console_scripts": [
+            "ai-object-detector=main:main",
+        ],
+    },
+)

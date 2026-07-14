@@ -1,0 +1,35 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Model weights (large binary - download automatically instead)
+models/*.pt
+!models/.gitkeep
+
+# Outputs / generated media
+outputs/*
+!outputs/.gitkeep
+
+# User media (keep folder, ignore large personal files)
+images/*
+!images/.gitkeep
+videos/*
+!videos/.gitkeep
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
